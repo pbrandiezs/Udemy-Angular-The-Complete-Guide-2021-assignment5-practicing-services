@@ -7,8 +7,8 @@
       <app-inactive-users
         [users]="inactiveUsers"
         (userSetToActive)="onSetToActive($event)"></app-inactive-users>
-      <p>Active to inactive move count: {{ this.counterService.activeToInactiveMoves }}</p>
-      <p>Inactive to active move count: {{ this.counterService.inactiveToActiveMoves }}</p>
+      <p>Active to inactive move count: {{ counterService.activeToInactiveMoves }}</p>
+      <p>Inactive to active move count: {{ counterService.inactiveToActiveMoves }}</p>
     </div>
     <!--
       Optimize this app by adding a UsersService which manages the active and inactive users.
